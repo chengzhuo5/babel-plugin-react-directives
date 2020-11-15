@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 function Demo({ classNames, className, extraProps = { id: '123' } }) {
   return (
     <div
-      x-class={classNames}
+      v-class={classNames}
       className={className}
       {...extraProps}
     />

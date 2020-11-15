@@ -15,7 +15,7 @@ class Demo extends React.Component {
       <div
         className="test"
         style={{ color: 'red' }}
-        x-show={this.state.visible}
+        v-show={this.state.visible}
         {...this.state.extraProps}
       />
     );

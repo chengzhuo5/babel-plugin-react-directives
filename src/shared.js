@@ -4,7 +4,7 @@ const ajvErrors = require('ajv-errors');
 
 // plugin option
 const opts = {
-  prefix: 'x',
+  prefix: 'v',
   pragmaType: 'React'
 };
 
@@ -25,11 +25,14 @@ const DIRECTIVES = {
   get FOR() {
     return `${opts.prefix}-for`;
   },
-  get MODEL() {
-    return `${opts.prefix}-model`;
+  get MODEL_CLASS() {
+    return `${opts.prefix}-model-class`;
   },
   get MODEL_HOOK() {
     return `${opts.prefix}-model-hook`;
+  },
+  get MODEL_VUE() {
+    return `${opts.prefix}-model`;
   },
   get CLASS() {
     return `${opts.prefix}-class`;
@@ -74,11 +77,10 @@ function syncOpts(options = {}) {
   );
 
   Object.assign(opts, {
-    prefix: prefix || 'x',
+    prefix: prefix || 'v',
     pragmaType: pragmaType || 'React'
   });
 }
-
 
 module.exports = {
   DIRECTIVES,

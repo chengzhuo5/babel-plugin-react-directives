@@ -1,1 +1,1 @@
-module.exports = /There should be no more than one directive: `x-if`/
+module.exports = /There should be no more than one directive: `v-if`/

@@ -4,7 +4,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'plugin:react-directives/recommended'
+    'plugin:@minar-kotonoha/react-directives/recommended',
   ],
   rules: {
     'react/prop-types': 'off',

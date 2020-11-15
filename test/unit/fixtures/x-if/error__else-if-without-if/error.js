@@ -1,1 +1,1 @@
-module.exports = /`x-else-if` used on element <div> without corresponding `x-if`/
+module.exports = /`v-else-if` used on element <div> without corresponding `v-if`/

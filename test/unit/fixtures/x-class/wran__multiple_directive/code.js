@@ -1,1 +1,1 @@
-const a = <div x-class="foo" x-class="bar"/>
+const a = <div v-class="foo" v-class="bar"/>

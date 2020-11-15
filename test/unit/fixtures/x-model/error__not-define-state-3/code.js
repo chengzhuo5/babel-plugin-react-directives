@@ -1,5 +1,5 @@
 class A extends React.Component {
   render() {
-    return <input x-model={this['state']}/>
+    return <input v-model-class={this['state']}/>
   }
 }

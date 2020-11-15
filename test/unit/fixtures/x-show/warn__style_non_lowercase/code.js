@@ -1,1 +1,1 @@
-const a = <div x-show={testA} STYLE="styleString">A</div>;
+const a = <div v-show={testA} STYLE="styleString">A</div>;

@@ -14,6 +14,6 @@ module.exports = {
     'test'
   ],
   moduleNameMapper: {
-    '^babel-plugin-react-directives/(.*)$': '<rootDir>/$1'
+    '^@minar-kotonoha/babel-plugin-react-directives/(.*)$': '<rootDir>/$1'
   },
 };

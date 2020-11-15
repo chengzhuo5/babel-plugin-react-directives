@@ -1,6 +1,6 @@
 {
-  "name": "babel-plugin-react-directives",
-  "version": "1.1.2",
+  "name": "@minar-kotonoha/babel-plugin-react-directives",
+  "version": "1.2",
   "description": "A babel plugin that provides some directives for react(any JSX), similar to directive of vue.",
   "main": "src/index.js",
   "files": [
@@ -13,10 +13,7 @@
   "scripts": {
     "test": "jest",
     "test:clear-cache": "jest --clearCache",
-    "pg:dev": "node playground/build.js --dev",
-    "pg:build": "node playground/build.js",
-    "prepublishOnly": "npm run test",
-    "postinstall": "node test/install.js && node playground/install.js"
+    "prepublishOnly": "npm run test"
   },
   "husky": {
     "hooks": {
@@ -33,14 +30,14 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "author": "peakchen90 <1558267774@qq.com>",
+  "author": "chengzhuo5",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/peakchen90/babel-plugin-react-directives"
+    "url": "https://github.com/chengzhuo5/babel-plugin-react-directives"
   },
   "bugs": {
-    "url": "https://github.com/peakchen90/babel-plugin-react-directives/issues"
+    "url": "https://github.com/chengzhuo5/babel-plugin-react-directives/issues"
   },
   "keywords": [
     "babel-plugin",
@@ -71,6 +68,7 @@
     "@babel/core": "^7.11.6",
     "@babel/plugin-transform-modules-commonjs": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
+    "@minar-kotonoha/eslint-plugin-react-directives": "^1.0.3",
     "@types/jest": "^26.0.13",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.3.0",
@@ -81,7 +79,6 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-directives": "^1.0.1",
     "husky": "^4.2.5",
     "invariant": "^2.2.4",
     "jest": "^26.4.2",

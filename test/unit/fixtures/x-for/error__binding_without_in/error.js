@@ -1,1 +1,1 @@
-module.exports = /The `x-for` used on element <div> with invalid binding value/
+module.exports = /The `v-for` used on element <div> with invalid binding value/

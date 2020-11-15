@@ -1,1 +1,1 @@
-const a = <div x-else>A</div>;
+const a = <div v-else>A</div>;

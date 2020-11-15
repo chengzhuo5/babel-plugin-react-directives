@@ -1,4 +1,4 @@
 const a = <div>
-  <div x-if={testA}>A</div>
-  <div x-else-if>B</div>
+  <div v-if={testA}>A</div>
+  <div v-else-if>B</div>
 </div>;

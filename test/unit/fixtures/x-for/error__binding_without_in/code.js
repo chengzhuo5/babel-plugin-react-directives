@@ -1,1 +1,1 @@
-const a = <div x-for={list}></div>
+const a = <div v-for={list}></div>

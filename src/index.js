@@ -9,7 +9,6 @@ const transformModel = require('./directives/model');
 const transformFor = require('./directives/for');
 const transformClass = require('./directives/class');
 
-
 module.exports = (api) => {
   if (api.assertVersion) {
     api.assertVersion('>= 6.20.0');
@@ -18,7 +17,7 @@ module.exports = (api) => {
   }
 
   return {
-    name: 'react-directives',
+    name: '@minar-kotonoha/babel-plugin-react-directives',
 
     /* istanbul ignore next: reference third party lib */
     // https://github.com/babel/babel/blob/v7.6.2/packages/babel-plugin-syntax-jsx/src/index.js
@@ -62,7 +61,8 @@ module.exports = (api) => {
             );
 
           case DIRECTIVES.SHOW:
-          case DIRECTIVES.MODEL:
+          case DIRECTIVES.MODEL_CLASS:
+          case DIRECTIVES.MODEL_VUE:
           case DIRECTIVES.FOR:
           case DIRECTIVES.CLASS:
             codeFrameWarn(

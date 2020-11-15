@@ -1,6 +1,6 @@
-const a = <div x-if={testRoot}>A</div>;
+const a = <div v-if={testRoot}>A</div>;
 
-const b = <div x-if={testRoot}>
-  <p x-if={testA}>A</p>
-  <p x-else>B</p>
+const b = <div v-if={testRoot}>
+  <p v-if={testA}>A</p>
+  <p v-else>B</p>
 </div>;

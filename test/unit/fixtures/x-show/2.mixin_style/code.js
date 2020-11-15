@@ -1,3 +1,3 @@
-const a = <div x-show={testA} style={{ color: "red" }}>A</div>;
+const a = <div v-show={testA} style={{ color: "red" }}>A</div>;
 
-const b = <div x-show={testB} style={styleA}>B</div>;
+const b = <div v-show={testB} style={styleA}>B</div>;

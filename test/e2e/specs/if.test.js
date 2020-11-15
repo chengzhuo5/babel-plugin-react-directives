@@ -12,10 +12,10 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <p x-if={this.state.data === 'A'}>A</p>
-        <p x-else-if={this.state.data === 'B'}>B</p>
-        <p x-else-if={this.state.data === 'C'}>C</p>
-        <p x-else>D</p>
+        <p v-if={this.state.data === 'A'}>A</p>
+        <p v-else-if={this.state.data === 'B'}>B</p>
+        <p v-else-if={this.state.data === 'C'}>C</p>
+        <p v-else>D</p>
       </div>
     );
   }

@@ -3,7 +3,7 @@ class A extends React.Component {
     return (
       <input
         onChange={this.onChange}
-        x-model={this.state.data}
+        v-model-class={this.state.data}
       />
     )
   }
@@ -15,7 +15,7 @@ class B extends React.Component {
       <input
         onChange={this.onChange}
         value={this.state.data2}
-        x-model={this.state.data}
+        v-model-class={this.state.data}
         {...extraProps}
       />
     )

@@ -16,7 +16,7 @@ class Demo1 extends React.Component {
     const { data } = this.state;
     return (
       <div>
-        <input x-model={data.a[0]}/>
+        <input v-model-class={data.a[0]}/>
         <p className="text">{data.a[0]}</p>
         <p className="extra">{data.a[1]}</p>
       </div>
@@ -31,7 +31,7 @@ function Demo2() {
   });
   return (
     <div>
-      <input x-model-hook={data.text}/>
+      <input v-model-hook={data.text}/>
       <p className="text">{data.text}</p>
       <p className="extra">{data.extra}</p>
     </div>
@@ -46,7 +46,7 @@ function Demo3() {
   const [data, setData] = React.useState('foo');
   return (
     <div>
-      <CustomInput x-model-hook={data}/>
+      <CustomInput v-model-hook={data}/>
       <p className="text">{data}</p>
     </div>
   );
@@ -56,21 +56,21 @@ function Demo4({ fn, extraProps }) {
   const [data, setData] = React.useState('foo');
   return (
     <div>
-      <input x-model-hook={data} onChange={fn} {...extraProps}/>
+      <input v-model-hook={data} onChange={fn} {...extraProps}/>
       <p className="text">{data}</p>
     </div>
   );
 }
 
 describe('directive: model', () => {
-  test('use in class: x-model', () => {
+  test('use in class: v-model-class', () => {
     const wrapper = mount(<Demo1/>);
     wrapper.find('input').simulate('change', createInputNode('new value'));
     expect(wrapper.find('.text').text()).toBe('new value');
     expect(wrapper.find('.extra').text()).toBe('B');
   });
 
-  test('use in hook: x-model-hook', () => {
+  test('use in hook: v-model-hook', () => {
     const wrapper = mount(<Demo2/>);
     wrapper.find('input').simulate('change', createInputNode('new value'));
     expect(wrapper.find('.text').text()).toBe('new value');

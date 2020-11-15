@@ -1,1 +1,1 @@
-const a = <div x-for={({ name }, index) in list}></div>
+const a = <div v-for={({ name }, index) in list}></div>

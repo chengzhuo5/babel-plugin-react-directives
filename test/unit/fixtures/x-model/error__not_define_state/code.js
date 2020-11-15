@@ -1,6 +1,6 @@
 class A extends React.Component {
   render() {
     const data = ''
-    return <input x-model={data}/>
+    return <input v-model-class={data}/>
   }
 }

@@ -30,14 +30,14 @@ class Todo extends React.Component {
 
     return (
       <div>
-        <input className="input" type="text" x-model={searchText}/>
+        <input className="input" type="text" v-model-class={searchText}/>
         <button className="add" onClick={this.onAdd.bind(this)}>Add</button>
-        <button x-show={list.length > 0} className="clear">Clear</button>
+        <button v-show={list.length > 0} className="clear">Clear</button>
 
         <ul className="todo-list">
           <li
-            x-for={(item, index) in list}
-            x-if={!searchText || item.indexOf(searchText) !== -1}
+            v-for={(item, index) in list}
+            v-if={!searchText || item.indexOf(searchText) !== -1}
             key={item}
             className="todo-item"
           >

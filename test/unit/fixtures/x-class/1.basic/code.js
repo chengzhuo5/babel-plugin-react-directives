@@ -1,6 +1,10 @@
 const a = (
-  <div x-class={{
-    foo: false,
-    bar: true,
-  }}>A</div>
-)
+  <div
+    v-class={{
+      foo: false,
+      bar: true
+    }}
+  >
+    A
+  </div>
+);

@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 function Demo({ list }) {
   return (
     <ul>
-      <li x-for={(item, index) in list} key={item.id}>{item.name}-{index}</li>
+      <li v-for={(item, index) in list} key={item.id}>{item.name}-{index}</li>
     </ul>
   );
 }
