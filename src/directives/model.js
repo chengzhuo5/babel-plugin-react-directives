@@ -89,8 +89,14 @@ function buildClassSetStateExpression(attrPath, stateBindingStack, newValExpress
 
 function buildVueSetStateExpression(newValExpression, bindingValue) {
   return [
-    t.expressionStatement(
-      t.assignmentExpression('=', bindingValue, newValExpression)
+    t.expressionStatement(t.assignmentExpression('=', bindingValue, newValExpression)),
+    t.ifStatement(
+      t.logicalExpression(
+        '&&',
+        t.memberExpression(t.thisExpression(), t.identifier('_rawComponent')),
+        t.memberExpression(t.memberExpression(t.thisExpression(), t.identifier('_rawComponent')), t.identifier('forceUpdate'))
+      ),
+      t.blockStatement([t.expressionStatement(t.callExpression(t.memberExpression(t.memberExpression(t.thisExpression(), t.identifier('_rawComponent')), t.identifier('forceUpdate')), []))])
     )
   ];
 }

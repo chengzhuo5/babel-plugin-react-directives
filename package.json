@@ -1,6 +1,6 @@
 {
   "name": "@minar-kotonoha/babel-plugin-react-directives",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A babel plugin that provides some directives for react(any JSX), similar to directive of vue.",
   "main": "src/index.js",
   "files": [
